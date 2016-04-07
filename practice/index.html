@@ -1,0 +1,424 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/maystyle.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+      <!--main area-->
+      <div style="height: 600px; overflow: hidden;position:relative">
+        <div style="width: 100%; position: absolute; top:0px; z-index: -1; overflow:hidden;">
+          <video autoplay="autoplay" loop="loop" style="z-index: -1; height: 100%;"><source src="https://a0.muscache.com/airbnb/static/SanFrancisco-P1-1.mp4" type="video/mp4"></video>
+        </div>
+
+        <!--header-->
+        <nav class="z-depth-0" style="background-color: transparent;">
+          <div class="nav-wrapper">
+            <!-- <a href="#" class="brand-logo"><i class="medium material-icons">insert_chart</i></a> -->
+            <a href="#" class="brand-logo" style="left: 20px;"><i class="material-icons">insert_chart</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <!-- <li><a class="btn" style="background-color: transparent; border: 1px; border-style: solid; padding: 0px 15px;">成為房東</a></li> -->
+              <li><a class="btn navtranbtn">成為房東</a></li>
+              <!-- <li><a class="btn" style="background-color: transparent;box-shadow: none; padding: 0px 5px; margin: 0px 5px;"><i class="material-icons right" style="font-size: 1.5rem; line-height: inherit; margin-left: 8px;">perm_media</i>旅程</a></li> -->
+              <li><a class="btn navbtn"><i class="material-icons right iclass">perm_media</i>旅程</a></li>
+              <li><a class="btn navbtn"><i class="material-icons right iclass">email</i>訊息</a></li>
+              <li><a class="btn navbtn"><i class="material-icons right iclass">live_help</i>幫助</a></li>
+              <li><a class="btn navbtn"><img class="right circle responsive-img" style="height:30px; margin: 2px 8px; border:2px solid #fff;" src="https://scontent-tpe1-1.xx.fbcdn.net/hprofile-xfp1/v/t1.0-1/p50x50/12510361_10208275653839660_6943780731868350069_n.jpg?oh=742434adcc610801d667b6163f7fa196&oe=57BDEA77">歐陽</a></li>
+
+             <!--  <li><a class="btn" style="background-color: transparent;box-shadow: none; padding: 0px 5px; margin: 0px 5px;"><i class="material-icons right" style="font-size: 1.5rem; line-height: inherit; margin-left: 8px;">email</i>訊息</a></li>
+
+              <li><a class="btn" style="background-color: transparent;box-shadow: none; padding: 0px 5px; margin: 0px 5px;"><i class="material-icons right" style="font-size: 1.5rem; line-height: inherit; margin-left: 8px;">live_help</i>幫助</a></li>
+
+              <li><a class="btn" style="background-color: transparent;box-shadow: none; padding: 0px 5px; margin: 0px 10px;"><i class="material-icons right" style="font-size: 1.5rem; line-height: inherit; margin-left: 8px;">perm_media</i>培雅</a></li> -->
+
+            </ul>
+          </div>
+        </nav>
+
+        <div style="margin: 132px 0px;">
+          <div class="white-text center-align">
+              <div><h1 style="font-weight: bolder;">歡迎回家</h1></div>
+              <div style="margin: -20px 0 0 0;"><span style="font-size: 1.2rem;">從超過190個國家的當地人租住獨一無二的家。</span></div>
+              <div style="margin-top: 15px;"><a class="waves-effect waves-light btn actionbtn" style="text-transform: none;">如何使用Airbnb</a></div>
+          </div>
+        </div>
+
+        <div style="background:rgba(0,0,0,0.5);">
+          <div class="center-align" style="padding: 35px 80px;">
+            <input type="text" placeholder="您想去哪裡？" style="display: inline; width: 380px; background-color: #fff; padding: 0px 10px; border-top-left-radius: 3px; border-bottom-left-radius: 3px; border: 1px solid #c4c4c4; margin: 0px;"></input>
+
+            <input type="text" placeholder="入住日期" style="display: inline; width: 123px; background-color: #fff; margin: 0px 0px 0px -6px; border: 1px solid #c4c4c4; padding: 0px 10px;"></input>
+            <div class="roomdate" style="display: inline-block;background-color: #fff; margin: 0px -6px; border-top: 1px solid #c4c4c4; border-bottom: 1px solid #c4c4c4; padding: 0px 10px;"></div>
+            <input type="text" placeholder="退房日期" style="display: inline; width: 123px; background-color: #fff;margin: 0px 0px 0px -5px; border: 1px solid ; border-color: #c4c4c4 #fff; padding: 0px 10px;"></input>
+
+            <!-- <label>Browser Select</label> -->
+            <div class="selectbefore">
+              <select class="selectstyle" style="display: inline-block; margin: 0px 0px 0px -5px; color: #ccc; width: 123px;">
+                <option value="1" disabled selected>1位房客</option>
+                <option value="2">2位房客</option>
+                <option value="3">3位房客</option>
+              </select>
+            </div>
+            <a class="btn red lighten-1" style="height: 47px; line-height: 46px; margin: 0px 0px 1px -5px;">搜索</a>
+
+          </div>
+        </div>
+      </div>
+      
+
+
+      <div class="container" style="width: 78%;">
+        <!-- Page Content goes here -->
+
+        <div class="row" style="margin: 35px 0;">
+
+          <div class="col s12 center-align grey-text text-darken-2"><h4 style="font-weight: bolder; margin-bottom: 0.3rem;">週末好去處</h4></div>
+          <div class="col s12 center-align grey-text text-darken-2" style="font-size: 16px;">發現離家近的好地方</div>
+
+        </div>
+
+        <div class="row">
+          <div class="col s4">
+            <!-- Promo Content 1 goes here -->
+            <a href="#">
+              <div class="valign-wrapper" style="background-image: url('https://a0.muscache.com/ic/discover/377?interpolation=lanczos-none&output-format=jpg&output-quality=70&v=33b4f2&downsize=675px:675px'); background-size: cover;background-position: center;  height: 344px;">
+                  <span class="valign center-align" style="width: 100%; color: #fff; font-size: 2rem; font-weight: bolder;">首爾</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col s4">
+            <!-- Promo Content 2 goes here -->
+            <a href="#">
+              <div class="valign-wrapper" style="background-image: url('https://a1.muscache.com/ic/discover/4328?interpolation=lanczos-none&output-format=jpg&output-quality=70&v=7c7ee0&downsize=675px:675px'); background-size: cover;background-position: center;  height: 344px;">
+                  <span class="valign center-align" style="width: 100%; color: #fff; font-size: 2rem; font-weight: bolder;">大阪</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col s4">
+            <!-- Promo Content 3 goes here -->
+            <a href="#">
+              <div class="valign-wrapper" style="background-image: url('https://a0.muscache.com/ic/discover/3962?interpolation=lanczos-none&output-format=jpg&output-quality=70&v=664a8e&downsize=675px:675px'); background-size: cover;background-position: center;  height: 344px;">
+                  <span class="valign center-align" style="width: 100%; color: #fff; font-size: 2rem; font-weight: bolder;">京都</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="row" style="margin: 45px 0;">
+          <div class="col s12 center-align">
+            <a class="btn" style="background-color: #fff; border: 1px solid #ccc;
+            color: #333; font-weight: bold; box-shadow: none; width: 33%;">查看所有目的地</a>
+          </div>
+        </div>
+
+        <div class="row" style="margin: 35px 0;">
+          <div class="col s12 center-align grey-text text-darken-2"><h4 style="font-weight: bolder; margin-bottom: 0.3rem;">探索世界</h4></div>
+          <div class="col s12 center-align grey-text text-darken-2" style="font-size: 16px;">搜羅全球熱門目的地</div>
+        </div>
+
+        <div class="row">
+
+          <div class="col s8">
+            <a href="#">
+              <div class="valign-wrapper" style="background-image: url('https://a0.muscache.com/ic/discover/397?interpolation=lanczos-none&output-format=jpg&output-quality=70&v=33b4f2&downsize=655px:326px'); background-size: cover;background-position: center;  height: 344px;">
+                  <span class="valign center-align" style="width: 100%; color: #fff; font-size: 2rem; font-weight: bolder;">巴黎</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col s4" style="position: relative;">
+            <a href="#">
+              <div class="valign-wrapper" style="background-image: url('https://a2.muscache.com/im/pictures/45344186/0c74c9b7_original.jpg?aki_policy=x_medium'); background-size: cover;background-position: center; height: 344px;">
+                <div class="valign center-align" style="width: 100%;">
+                  <div style="display: block;">
+                    <img class="circle responsive-img" style="height:55px; border:2px solid #fff;" src="https://scontent-tpe1-1.xx.fbcdn.net/hprofile-xal1/v/t1.0-1/p100x100/1009913_1105522066126681_7200599619779644690_n.jpg?oh=382193d141c26fd03b210198ed80c197&oe=5784818E">
+                  </div>
+                  <div><span style="color: #fff; font-size: 1.5rem;">由培雅出租</span></div>
+                  <div style="color: #fff; margin: -3px;">科隆</div>
+                </div>
+              </div>
+
+              <div class="left" style="position: absolute;bottom: 10%;color: #fff; background-color: rgba(60,63,64,0.9); padding: 7px 10px; font-size: 1.5rem;">
+                <sup>$</sup>
+                <span>2963</span>
+                <sup>TWD</sup>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="row" style="margin-top: 25px;">
+          <div class="col s4">
+            <!-- Promo Content 1 goes here -->
+            <a href="#">
+              <div class="valign-wrapper" style="background-image: url('https://a0.muscache.com/ic/discover/41?interpolation=lanczos-none&output-format=jpg&output-quality=70&v=33b4f2&downsize=326px:326px'); background-size: cover;background-position: center; height: 344px;">
+                  <span class="valign center-align" style="width: 100%; color: #fff; font-size: 2rem; font-weight: bolder;">倫敦</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col s4">
+            <!-- Promo Content 2 goes here -->
+            <a href="#">
+              <div class="valign-wrapper" style="background-image: url('https://a0.muscache.com/ic/discover/57?interpolation=lanczos-none&output-format=jpg&output-quality=70&v=33b4f2&downsize=326px:326px'); background-size: cover;background-position: center; height: 344px;">
+                  <span class="valign center-align" style="width: 100%; color: #fff; font-size: 2rem; font-weight: bolder;">米蘭</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col s4">
+            <!-- Promo Content 3 goes here -->
+            <a href="#">
+              <div class="valign-wrapper" style="background-image: url('https://a0.muscache.com/ic/pictures/discovery/attribute_photos/shopping_1x1.jpg?interpolation=lanczos-none&output-format=jpg&output-quality=70&size=large_cover&downsize=326px:326px&v=6'); background-size: cover;background-position: center; height: 344px;">
+                  <span class="valign center-align" style="width: 100%; color: #fff; font-size: 2rem; font-weight: bolder;">去曼谷購物</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top: 25px;">
+
+          <div class="col s4" style="position: relative;">
+            <a href="#">
+              <div class="valign-wrapper" style="background-image: url('https://a1.muscache.com/im/pictures/32768056/94679924_original.jpg?aki_policy=x_medium'); background-size: cover;background-position: center; height: 344px;">
+                <div class="valign center-align" style="width: 100%;">
+                  <div style="display: block;">
+                    <img class="circle responsive-img" style="height:55px; border:2px solid #fff;" src="https://scontent-tpe1-1.xx.fbcdn.net/hprofile-xal1/v/t1.0-1/p100x100/1009913_1105522066126681_7200599619779644690_n.jpg?oh=382193d141c26fd03b210198ed80c197&oe=5784818E">
+                  </div>
+                  <div><span style="color: #fff; font-size: 1.5rem;">由培雅出租</span></div>
+                  <div style="color: #fff; margin: -3px;">那不勒斯</div>
+                </div>
+              </div>
+
+              <div class="left" style="position: absolute;bottom: 10%;color: #fff; background-color: rgba(60,63,64,0.9); padding: 7px 10px; font-size: 1.5rem;">
+                <sup>$</sup>
+                <span>9973</span>
+                <sup>TWD</sup>
+              </div>
+            </a>
+          </div>
+
+          <div class="col s8">
+            <a href="#">
+              <div class="valign-wrapper" style="background-image: url('https://a0.muscache.com/ic/discover/55?interpolation=lanczos-none&output-format=jpg&output-quality=70&v=33b4f2&downsize=655px:326px'); background-size: cover;background-position: center;  height: 344px;">
+                  <span class="valign center-align" style="width: 100%; color: #fff; font-size: 2rem; font-weight: bolder;">慕尼黑</span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+         <div class="row" style="margin-top: 25px;">
+          <div class="col s4">
+            <!-- Promo Content 1 goes here -->
+            <a href="#">
+              <div class="valign-wrapper" style="background-image: url('https://a0.muscache.com/ic/discover/41?interpolation=lanczos-none&output-format=jpg&output-quality=70&v=33b4f2&downsize=326px:326px'); background-size: cover;background-position: center; height: 344px;">
+                  <span class="valign center-align" style="width: 100%; color: #fff; font-size: 2rem; font-weight: bolder;">紐約</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col s4">
+            <!-- Promo Content 2 goes here -->
+            <a href="#">
+              <div class="valign-wrapper" style="background-image: url('https://a0.muscache.com/ic/discover/57?interpolation=lanczos-none&output-format=jpg&output-quality=70&v=33b4f2&downsize=326px:326px'); background-size: cover;background-position: center; height: 344px;">
+                  <span class="valign center-align" style="width: 100%; color: #fff; font-size: 2rem; font-weight: bolder;">柏林</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col s4">
+            <!-- Promo Content 3 goes here -->
+            <a href="#">
+              <div class="valign-wrapper" style="background-image: url('https://a0.muscache.com/ic/pictures/discovery/attribute_photos/shopping_1x1.jpg?interpolation=lanczos-none&output-format=jpg&output-quality=70&size=large_cover&downsize=326px:326px&v=6'); background-size: cover;background-position: center; height: 344px;">
+                  <span class="valign center-align" style="width: 100%; color: #fff; font-size: 2rem; font-weight: bolder;">去托斯卡納觀⁠光⁠遊⁠覽</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 60px;">
+        <div class="col s12" style="background-image: url('https://a1.muscache.com/airbnb/static/homepages/belong-vid-9388056fc94bfd956cb956e5c983eac7.jpg'); background-size: cover;background-position: center;">
+          <div>
+            <div class="white-text center-align" style="padding: 120px 0;">
+              <div><h1 style="font-weight: bolder;">家在四方</h1></div>
+              <div><h5 style="line-height: 1px">Airbnb房東在世界各地締造一個個有歸屬感的家。</h5></div>
+              <div style="margin-top: 30px;"><a href="#" style="color: rgba(100%, 1000%, 100%, 0.8);"><i class="material-icons large">play_circle_filled</i></a></div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin: 30px 5px 25px 5px; ">
+        <div class="col s12 center-align grey-text text-darken-2"><h4 style="font-weight: bolder; margin-bottom: 50px;">我們的社區</h4></div>
+
+        <div class="col s3">
+            <!-- Promo Content 1 goes here -->
+            <a href="#">
+              <div class="valign-wrapper" style="background-image: url('https://a0.muscache.com/ic/discover/377?interpolation=lanczos-none&output-format=jpg&output-quality=70&v=33b4f2&downsize=675px:675px'); background-size: cover;background-position: center;  height: 492px;">
+                  <span class="valign center-align" style="width: 100%; color: #fff; font-size: 2rem; font-weight: bolder;">首爾</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="col s3">
+            <!-- Promo Content 2 goes here -->
+            <a href="#">
+              <div style="background-image: url('https://a1.muscache.com/airbnb/static/homepages/traveling-c539b85ba9aad5ff9179b0b29d2bbee0.jpg'); background-size: cover;background-position: center;  height: 492px; position: relative;">
+                <div class="center-align">
+                  <div style="display: inline-block; background-color: #007a87; color: #fff; padding: 10px;">旅行</div>
+                </div>
+                <div style="vertical-align: bottom; position: absolute; bottom: 0px; width: 100%; padding: 10px;">
+                  <span class="center-align" style=" color: #fff; font-size: 2rem; display: block; font-weight: bold;">Alice & Chris</span>
+                  <span class="center-align" style=" color: #fff; display: block; font-size: 0.9rem;">不管是跨洋過海還是跨城郊遊，Alice & Chris總是尋找著最本真最當地化的體驗。
+                  <br>
+                  <br>
+                  <u>了解如何通過Airbnb旅行。 </u></span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col s3">
+            <!-- Promo Content 3 goes here -->
+            <a href="#">
+               <div style="background-image: url('https://a1.muscache.com/airbnb/static/homepages/business-56c80d9222a2e084253f33e893f8bd32.jpg'); background-size: cover;background-position: center;  height: 492px; position: relative;">
+                <div class="center-align">
+                  <div style="display: inline-block; background-color: #393c3d; color: #fff; padding: 10px;">商務差旅</div>
+                </div>
+                <div style="vertical-align: bottom; position: absolute; bottom: 0px; width: 100%; padding: 10px;">
+                  <span class="center-align" style=" color: #fff; font-size: 2rem; display: block; font-weight: bold;">商務Airbnb</span>
+                  <span class="center-align" style=" color: #fff; display: block; font-size: 0.9rem;">不管您因為工作來到哪裡，都像回到了家裡一樣。
+                  <br>
+                  <br>
+                  <u>讓您的團隊加入Airbnb。 </u></span>
+                </div>
+              </div>
+
+            </a>
+          </div>
+
+          <div class="col s3">
+            <!-- Promo Content 4 goes here -->
+            <a href="#">
+              <div class="valign-wrapper" style="background-image: url('https://a0.muscache.com/ic/discover/3962?interpolation=lanczos-none&output-format=jpg&output-quality=70&v=664a8e&downsize=675px:675px'); background-size: cover;background-position: center;  height: 492px;">
+                  <span class="valign center-align" style="width: 100%; color: #fff; font-size: 2rem; font-weight: bolder;">京都</span>
+              </div>
+            </a>
+          </div>
+      </div>
+
+      <div class="footer">
+        <div class="container row">
+
+          <div>
+            <div class="col s3 offset-s1">
+              <div class="row-space drop-arrow">
+                <select class="drop-down-menu">
+                  <option value="id" disabled selected>Bahasa Indonesia</option>
+                  <option value="id">Bahasa Indonesia</option>
+                  <option value="id">Bahasa Indonesia</option>
+                </select>
+              </div>
+              
+              <div class="drop-arrow">
+                <select class="drop-down-menu">
+                  <option value="id" disabled selected>Bahasa Indonesia</option>
+                  <option value="id">Bahasa Indonesia</option>
+                  <option value="id">Bahasa Indonesia</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col s2 offset-s1">
+              <div class="footer-title row-space">
+                公司
+              </div>
+              <div class="footer-content">
+                <ul>
+                  <li><a href="#" class="footer-link-style">關於</a></li>
+                  <li><a href="#" class="footer-link-style">工作機會</a></li>
+                  <li><a href="#" class="footer-link-style">傳媒</a></li>
+                  <li><a href="#" class="footer-link-style">Blog</a></li>
+                  <li><a href="#" class="footer-link-style">幫助</a></li>
+                  <li><a href="#" class="footer-link-style">政策</a></li>
+                  <li><a href="#" class="footer-link-style">災難響應</a></li>
+                  <li><a href="#" class="footer-link-style">服務條款與私隱聲明</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col s2">
+              <div class="footer-title row-space">
+                探索
+              </div>
+              <div class="footer-content">
+                <ul>
+                  <li><a href="#" class="footer-link-style">關於</a></li>
+                  <li><a href="#" class="footer-link-style">工作機會</a></li>
+                  <li><a href="#" class="footer-link-style">傳媒</a></li>
+                  <li><a href="#" class="footer-link-style">Blog</a></li>
+                  <li><a href="#" class="footer-link-style">幫助</a></li>
+                  <li><a href="#" class="footer-link-style">政策</a></li>
+                  <li><a href="#" class="footer-link-style">災難響應</a></li>
+                  <li><a href="#" class="footer-link-style">服務條款與私隱聲明</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col s2">
+              <div class="footer-title row-space">
+                出租
+              </div>
+              <div class="footer-content">
+                <ul>
+                  <li><a href="#" class="footer-link-style">關於</a></li>
+                  <li><a href="#" class="footer-link-style">工作機會</a></li>
+                  <li><a href="#" class="footer-link-style">傳媒</a></li>
+                  <li><a href="#" class="footer-link-style">Blog</a></li>
+                  <li><a href="#" class="footer-link-style">幫助</a></li>
+                  <li><a href="#" class="footer-link-style">政策</a></li>
+                  <li><a href="#" class="footer-link-style">災難響應</a></li>
+                  <li><a href="#" class="footer-link-style">服務條款與私隱聲明</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12">
+            <hr class="line">
+          </div>
+
+          <div>
+            <div class="col s12 center-align footer-title row-space">
+              關注我們
+            </div>
+            <div class="col s12 center-align row-space">
+              icon
+            </div>
+            <div class="col s12 center-align copyright row-space">
+              © Airbnb, Inc.
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    </body>
+  </html>

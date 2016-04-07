@@ -1,0 +1,141 @@
+body {
+	background-color: #f5f5f5;
+	font-family: "Hiragino Sans GB","华文细黑","STHeiti","微软雅黑","Microsoft YaHei",SimHei,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+
+/* nav */
+
+.navtranbtn{
+	background-color: transparent; border: 1px; border-style: solid; padding: 0px 15px;
+}
+
+.navtranbtn:hover{
+	background-color: transparent;
+	// box-shadow: none;
+}
+
+.navbtn{
+	background-color: transparent;box-shadow: none; padding: 0px 5px; margin: 0px 6px;
+}
+
+.navbtn .iclass{
+	font-size: 1.5rem; line-height: inherit; margin-left: 8px;
+}
+
+.navbtn:hover{
+	background-color: transparent;
+	box-shadow:none;
+}
+
+
+
+/* main */
+
+.actionbtn{
+	background: rgba(255, 255, 255, 0.3)
+}
+
+.actionbtn:hover{
+	background: rgba(0, 0, 0, 0.3)
+}
+
+.roomdate::before{
+	// font-size: 3rem;
+	// line-height: 3rem;
+    font-size: 1rem;
+	line-height: 3rem;
+	content:"→";
+	color: #ccc;
+}
+
+.inputstyle{
+	display: inline-block; background-color: #fff; padding: 0px 10px; border: 1px solid #c4c4c4;
+}
+
+.selectstyle{
+	background-color: #fff;
+	//width: 10%;
+	//padding: 0px 10px; border: 1px solid #c4c4c4;
+	height: 47px;
+	border-radius: 0px;
+	-webkit-appearance: none;
+}
+
+.selectbefore{
+	position: relative;
+	display: inline;
+}
+
+.selectbefore::before{
+	// font-size: 3rem;
+	// line-height: 3rem;
+	position: absolute;
+    font-size: 1rem;
+	line-height: 3rem;
+	content: "▼";
+	//top: 5px;
+	right: 10px;
+}
+
+
+/* footer */
+.footer{
+	background-image: url('https://a0.muscache.com/airbnb/static/footer/background-317dd7c2cb678ddbdb0a983d511cb9a0.png');
+	background-color: #2b2d2e;
+	padding-top: 60px;
+	color: #fff;
+}
+
+.drop-down-menu{
+	-webkit-appearance: none;
+	display: inline-block;
+	background-color: #565a5c;
+	color: #fff;
+	border: 0px;
+	padding: 10px;
+}
+
+.drop-arrow{
+	position: relative;
+}
+
+.drop-arrow::before{
+	position: absolute;
+	font-size: 1rem;
+	line-height: 3rem;
+	content: "▼";
+	vertical-align: bottom;
+	right: 0px;
+	padding-right: 7px;
+	color: #82888a;
+}
+
+.row-space{
+	margin-bottom: 15px;
+}
+
+.footer-title{
+	font-weight: bolder;
+	font-size: 1.1rem;
+}
+
+.footer-content{
+	color: #fff;
+}
+
+.footer-link-style{
+	color: #fff;
+	font-size: 0.9rem;
+}
+
+.line{
+	border-color: rgba(255,255,255,0.2);
+	margin: 50px 0px 30px 0px;
+	width: 100%;
+}
+
+.copyright{
+	color: #82888a;
+	font-size: 0.5rem;
+}
