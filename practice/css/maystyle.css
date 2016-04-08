@@ -56,15 +56,22 @@ body {
 .selectstyle{
 	background-color: #fff;
 	//width: 10%;
-	//padding: 0px 10px; border: 1px solid #c4c4c4;
-	height: 47px;
+	//padding: 0px 10px; 
+	// height: 47px;
 	border-radius: 0px;
 	-webkit-appearance: none;
+	width:100%;
+	border-width:0;
+	padding:0;
+	text-indent: 5px;
 }
 
-.selectbefore{
+.selectbefore {
+	border: 1px solid #c4c4c4;
+	width: 123px;
 	position: relative;
-	display: inline;
+	display: inline-block;
+	margin-left: -5px;
 }
 
 .selectbefore::before{
@@ -76,6 +83,17 @@ body {
 	content: "▼";
 	//top: 5px;
 	right: 10px;
+}
+
+.input-container {
+	line-height: 3rem;
+}
+.search-btn {
+	height: 47px;
+    line-height: 47px;
+    margin: -1px 0px 1px -5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 
@@ -138,4 +156,8 @@ body {
 .copyright{
 	color: #82888a;
 	font-size: 0.5rem;
+}
+
+.row {
+	margin-bottom: 0;
 }
